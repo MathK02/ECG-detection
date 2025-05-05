@@ -31,19 +31,44 @@ Deux modèles sont entraînés et comparés :
 - **CNN 1D** : deux couches de convolution + max pooling adaptatif + dropout + couche fully connected
 - **LSTM 1D** : une couche LSTM suivie d’un dropout et d’un classifieur linéaire
 
-## Visualisation des performances
+##  Résultats
 
-Après entraînement, le code génère automatiquement :
-- Une courbe du loss d’entraînement
-- Une courbe de l’AUC sur les données de test
-- Une matrice de confusion
-- Une courbe ROC
-- Une courbe précision-rappel
-- Une distribution des scores de probabilité par classe
+Les performances des deux modèles sont présentées ci-dessous.
 
-## Utilisation
+###  CNN 1D
 
-1. Cloner le dépôt :
-```bash
-git clone https://github.com/<utilisateur>/<nom-du-repo>.git
-cd <nom-du-repo>
+- **Courbe du loss d’entraînement**  
+  ![Loss CNN](images/loss_cnn.jpg)
+
+- **Courbe ROC**  
+  ![ROC CNN](images/roc_cnn.jpg)
+
+- **Courbe précision-rappel**  
+  ![PR CNN](images/pr_cnn.jpg)
+
+- **Matrice de confusion**  
+  ![Confusion CNN](images/confusion_cnn.jpg)
+
+- **Histogramme des scores de probabilité par classe**  
+  ![Histogramme CNN](images/histogram_cnn.jpg)
+
+---
+
+###  LSTM 1D
+
+- **Courbe du loss d’entraînement**  
+  ![Loss LSTM](images/loss_lstm.jpg)
+
+- **Courbe ROC**  
+  ![ROC LSTM](images/roc_lstm.jpg)
+
+- **Courbe précision-rappel**  
+  ![PR LSTM](images/pr_lstm.jpg)
+
+- **Matrice de confusion**  
+  ![Confusion LSTM](images/confusion_lstm.jpg)
+
+- **Histogramme des scores de probabilité par classe**  
+  ![Histogramme LSTM](images/histogram_lstm.jpg)
+
+
